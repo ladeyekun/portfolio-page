@@ -309,3 +309,9 @@ section.about, section.contact {
         }
     }
 }
+
+.socials {
+    margin-top: 25px;
+    width: 100%;
+    flex-wrap: wrap;
+}
