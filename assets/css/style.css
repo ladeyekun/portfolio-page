@@ -315,3 +315,19 @@ section.about, section.contact {
     width: 100%;
     flex-wrap: wrap;
 }
+
+/*----------------------*/
+/* Footer               */
+/*----------------------*/
+
+footer {
+    height: var(--app-footer-height);
+    background-color: #c4c4c4;
+    
+    p {
+        color: #333;
+        line-height: var(--app-footer-height);
+        text-align: center;
+        font-weight: 400;
+    }
+}
