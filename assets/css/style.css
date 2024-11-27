@@ -283,3 +283,29 @@ section.about, section.contact {
         line-height: 24px;
     }
 }
+
+.box {
+    
+    /*width: 200px;*/
+    flex: 0 0 auto;
+    width: calc(25% - 10px);
+
+    height: 60px;
+    background-color: #f9fafb;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 5%);
+
+    img {
+        height: 35px;
+        padding-left: 15px;
+    }
+
+    .description {
+
+        p {
+            font-size: 20px;
+            line-height: 60px;
+            /*padding-left: 15px*/
+        }
+    }
+}
