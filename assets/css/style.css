@@ -331,3 +331,95 @@ footer {
         font-weight: 400;
     }
 }
+
+/*-----------------------*/
+/* Media queries         */
+/*-----------------------*/
+
+@media screen and (max-width: 1200px) {
+    .hero-banner-col {
+        width: calc(50% - 10px);
+    }
+    
+    .box {
+        width: calc(25% - 10px);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .hero-banner-col {
+        width: calc(100%);
+    }
+
+    .box {
+        width: calc(50% - 15px);
+    }
+
+    .hero-banner-col img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero-banner-col {
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .section-title {
+        h2 {
+            font-size: 30px;
+        }
+        
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    .navbar {
+
+        nav {
+            ul {
+                display: none;
+            }
+
+            button.hamburger {
+                display: block;
+                font-size: 20px;
+                background: none;
+                border: none;
+                color: var(--app-primary-font-color);
+                line-height: var(--app-navbar-height);
+                padding: 0 10px;
+                cursor: pointer;          
+            }
+
+            ul.active {
+                display: grid;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    padding: 10px 0;
+                    line-height: 10px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .hero-banner-col {
+        width: calc(100%);
+    }
+    
+    .box {
+        width: calc(100%);
+    }
+}
