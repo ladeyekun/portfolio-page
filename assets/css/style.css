@@ -140,6 +140,7 @@ nav ul li a:hover {
 .hero-banner-container {
     height: calc(100% - 80px);
     color: var(--app-primary-font-color);
+    width: 100%;
 }
 
 .hero-banner-content {
@@ -165,11 +166,14 @@ nav ul li a:hover {
 
 
 .text-grp {
+    width: 100%;
+
     h2 {
         font-size: 36px;
         font-weight: 600;
         padding-bottom: 5px;
-        color: var(--app-primary-font-color);    
+        color: var(--app-primary-font-color); 
+        word-wrap: break-word;   
     }
 
     h3 {
@@ -202,16 +206,7 @@ nav ul li a:hover {
 }
 .hero-banner-col {
     flex: 0 0 auto;
-    /*width: calc(50% - 10px);*/
     width: 100%;
-}
-
-.picture {
-    /*max-width: 400px;*/
-
-    img {
-        width: 100%;
-    }
 }
 
 .typing-effect {
@@ -343,7 +338,7 @@ footer {
 
 @media screen and (max-width: 1200px) {
     .hero-banner-col {
-        width: calc(50% - 10px);
+        width: calc(100%);
     }
     
     .box {
@@ -354,21 +349,24 @@ footer {
 @media screen and (max-width: 780px) {
     .hero-banner-col {
         width: calc(100%);
+        h2 {
+            font-size: 26px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
     }
 
     .box {
         width: calc(50% - 15px);
-    }
-
-    .hero-banner-col img {
-        /*display: none;*/
     }
 }
 
 @media screen and (max-width: 640px) {
     .hero-banner-col {
         h2 {
-            font-size: 30px;
+            font-size: 26px;
         }
 
         h3 {
@@ -422,6 +420,12 @@ footer {
 @media screen and (max-width: 420px) {
     .hero-banner-col {
         width: calc(100%);
+    }
+
+    .text-grp {
+        h2 {
+            font-size: 24px;
+        }
     }
     
     .box {
