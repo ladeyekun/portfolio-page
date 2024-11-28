@@ -406,6 +406,8 @@ footer {
                 display: grid;
                 margin: 0;
                 padding: 0;
+                position: relative;
+                width: 150px;
 
                 li {
                     padding: 10px 0;
