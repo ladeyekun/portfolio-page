@@ -97,13 +97,17 @@ header {
 
 .navbar .logo {
     color: var(--app-primary-font-color);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: var(--app-navbar-height);
+    width: 200px;
 
-    img {
-        height: var(--app-navbar-height);
-    }    
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: var(--app-navbar-height);
+
+        i {
+            margin-right: 4px;
+        }
+    }
 }
 
 nav {
@@ -198,7 +202,8 @@ nav ul li a:hover {
 }
 .hero-banner-col {
     flex: 0 0 auto;
-    width: calc(50% - 10px);
+    /*width: calc(50% - 10px);*/
+    width: 100%;
 }
 
 .picture {
@@ -356,7 +361,7 @@ footer {
     }
 
     .hero-banner-col img {
-        display: none;
+        /*display: none;*/
     }
 }
 
